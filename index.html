@@ -1,1 +1,144 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Tresor Mugunga - Portfolio</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="body-primary">
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link" data-scrollspy="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-scrollspy="about">About</a></li>
+        <li><a href="#blog" class="nav-link" data-scrollspy="blog">Blog</a></li>
+        <li><a href="#projects" class="nav-link" data-scrollspy="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-scrollspy="contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+        <label for="theme-toggle" class="toggle-label">
+          <span class="toggle-handle"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="rapper">
+        <div class="hero-intro">
+          <div class="intro">
+            <h2 id="greeting"></h2>
+            <h2>
+              <span class="underline">Tresor</span> Mugunga.
+            </h2>
+            <p class="hero-para">
+              I'm a skilled programmer with expertise in C++, Python, and C#, as well as strong leadership abilities. 
+              I am passionate about leveraging these skills to build robust and efficient software solutions.Then we later on learnt to work with html css and Javascript in order 
+              create responsive websites and host them on microsoft vercel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="rapper">
+        <div class="container_skills">
+          <h2>About</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="Mypic.jpeg" alt="Tresor working on code">
+            </div>
+            <div class="about-text">
+              <p class="uptopara">
+                Currently, I'm focused on mastering the fundamentals of programming languages, 
+                including C++, Python, and C#. Through this journey, I've gained strong 
+                problem-solving skills, a deep understanding of object-oriented programming, 
+                and the ability to write clean, efficient code.
+              </p>
+            </div>
+          </div>
+          <dl id="skills"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <div class="rapper">
+        <h2>My Blog</h2>
+        <div class="blog-posts" id="blog-posts-container">
+          <!-- Blogs will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="rapper">
+        <div class="container_projects">
+          <div class="projects-header">
+            <div class="title">
+              <h3>My Projects</h3>
+            </div>
+            <div class="project-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="data">Data</button>
+              <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+          </div>
+          <div class="project-listing">
+            <div id="projects-list" class="projects-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="rapper">
+        <div class="container_contact_footer">
+          <div class="container_contact">
+            <div class="containter_contact_text">
+              <h2>Contact</h2>
+              <p>I would love to hear about your project and how I could help.</p>
+            </div>
+            <form id="contact-form">
+              <div class="input_container">
+                <input type="text" id="name" name="name" aria-label="name" placeholder="Name" required>
+                <span id="nameError" class="error"></span>
+              </div>
+              <div class="input_container">
+                <input type="email" id="email" name="email" aria-label="email" placeholder="Email" required>
+                <span id="emailError" class="error"></span>
+              </div>
+              <div class="input_container">
+                <input type="text" id="phone" name="phone" aria-label="phone" placeholder="Phone">
+                <span id="phoneError" class="error"></span>
+              </div>
+              <div>
+                <button type="submit" id="submit">Send message</button>
+                <p id="successMessage" style="color: green; margin-top: 10px;"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+  
+  </footer>
+</body>
+</html>
